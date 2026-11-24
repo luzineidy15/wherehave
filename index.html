@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>where have</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>wherehave</h1>
         <nav>
-            <a href="#home">inicio</a>
-            <a href="#categoria">categoria</a>
-            <a href="#sobre">sobre</a>
-        <div class="option">
-            <label for="provincia">Província</label>
+            <div class="nav">
+                <i class="fa-solid fa-location-dot icon1"></i>
+                <h1>where<span class="h1">have</span></h1>
 
-<select name="provincia" id="provincia">
-    <option value="">Selecione a província</option>
-    <option value="luanda">Luanda</option>
-    <option value="benguela">Benguela</option>
-    <option value="huambo">Huambo</option>
-    <option value="huila">Huíla</option>
-    <option value="bengo">Bengo</option>
-    <option value="bie">Bié</option>
-    <option value="cabinda">Cabinda</option>
-    <option value="cuando">Cuando</option>
-    <option value="cubango">Cubango</option>
-    <option value="cuanza-norte">Cuanza-Norte</option>
-    <option value="cuanza-sul">Cuanza-Sul</option>
-    <option value="cunene">Cunene</option>
-    <option value="lunda-norte">Lunda-Norte</option>
-    <option value="lunda-sul">Lunda-Sul</option>
-    <option value="moxico">Moxico</option>
-    <option value="moxico-leste">Moxico Leste</option>
-    <option value="namibe">Namibe</option>
-    <option value="uige">Uíge</option>
-    <option value="zaire">Zaire</option>
-</select>
-        </div>    
-            
-            <button type="submit">entrar
+                <a href="#home" tabindex="1">inicio</a>
+                <a href="#categoria">categoria</a>
+                <a href="#sobre">sobre</a>
+
+                <div class="option">
+                    <span class="fa-solid fa-location-dot icon2"></span>
+                    <select name="provincia" id="provincia">
+                        <option value="">Luanda</option>
+                        <option value="luanda">Luanda</option>
+                        <option value="benguela">Benguela</option>
+                        <option value="huambo">Huambo</option>
+                        <option value="huila">Huíla</option>
+                        <option value="bengo">Bengo</option>
+                        <option value="bie">Bié</option>
+                        <option value="cabinda">Cabinda</option>
+                        <option value="cuando">Cuando</option>
+                        <option value="cubango">Cubango</option>
+                        <option value="cuanza-norte">Cuanza-Norte</option>
+                        <option value="cuanza-sul">Cuanza-Sul</option>
+                        <option value="cunene">Cunene</option>
+                        <option value="lunda-norte">Lunda-Norte</option>
+                        <option value="lunda-sul">Lunda-Sul</option>
+                        <option value="moxico">Moxico</option>
+                        <option value="moxico-leste">Moxico Leste</option>
+                        <option value="namibe">Namibe</option>
+                        <option value="uige">Uíge</option>
+                        <option value="zaire">Zaire</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">Entrar</button>
+            </div>
         </nav>
     </header>
-<h2>Enconte o que precisa, <br><span>mais perto de si</span></h2>    
-</body>
-</html>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Enconte o que precisa, <br><span>mais perto de si!</span></h2>
+    <h3>Lojas, serviços, produtos e muito mais na sua cidade</h3>
+
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="O que está procurando?" tabindex="1">
+    </div>
