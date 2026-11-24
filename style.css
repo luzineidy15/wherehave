@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(201, 194, 207);
+}
+header{
+    background-color: white;
+}
+h1{
+    color: blueviolet;
+}
+.option{
+    background-color: rgb(201, 194, 207);
+    color: black;
+
+}
+button{
+    background-color: blueviolet;
+    color: white;
+}
+h2{
+    
+}
