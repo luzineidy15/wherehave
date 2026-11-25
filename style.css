@@ -167,59 +167,69 @@ main {
 
 
 
+
 @media screen and (max-width: 600px) {
 
+    /* CABEÇALHO */
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        height: auto;
-        min-height: 50px;
-        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        height: 55px;
+        padding: 5px 8px;
+        width: 100%;
     }
 
     h1 {
-        font-size: 25px;
-        margin-left: 0;
+        font-size: 17px;
+        margin: 0;
         right: 0;
+        white-space: nowrap;
     }
 
     .icon1 {
-        font-size: 27px;
+        font-size: 22px;
         left: 0;
         margin-right: 0;
     }
 
     .nav a {
         left: auto;
-        font-size: 13px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     .option {
-        width: 110px;
-        margin-right: 0;
-        gap: 2px;
+        width: 85px;
+        min-width: 0;
+        margin: 0;
+        gap: 0;
     }
 
     .option select {
-        width: 100px;
-        padding: 6px 18px 6px 22px;
-        margin-right: 0;
-        font-size: 11px;
+        width: 85px;
+        min-width: 0;
+        padding: 5px 15px 5px 20px;
+        margin: 0;
+        font-size: 10px;
     }
 
     .option span {
-        left: 4px;
-        font-size: 11px;
+        left: 3px;
+        font-size: 10px;
     }
 
     .button {
         width: auto;
-        height: 32px;
-        padding: 6px 12px;
-        font-size: 12px;
+        min-width: 48px;
+        height: 30px;
+        padding: 5px 8px;
+        font-size: 11px;
     }
 
+    /* TÍTULO PRINCIPAL */
     h2 {
         font-size: 32px;
         line-height: 1.2;
@@ -235,6 +245,7 @@ main {
         padding: 0 12px;
     }
 
+    /* BARRA DE PESQUISA */
     .search {
         width: 90%;
         margin: 20px auto;
@@ -245,29 +256,34 @@ main {
         margin: 20px auto;
     }
 
+    /* CONTEÚDO PRINCIPAL */
     main {
         width: 100%;
         min-height: 100vh;
         padding: 25px 15px;
     }
 
+    /* CATEGORIAS */
     .section {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;
         width: 100%;
+        overflow-x: auto;
+        padding: 5px 0 15px;
     }
 
     .section button {
-        width: 100%;
-        height: 80px;
-        padding: 10px;
-        border-radius: 18px;
-        font-size: 13px;
+        flex: 0 0 105px;
+        height: 65px;
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 12px;
     }
 
     .section button h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }
+
